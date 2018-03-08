@@ -1,0 +1,49 @@
+{
+    "manifest_version": 2,
+    "name": "PocketCasts Hotkeys",
+    "version": "0.0.1",
+    "description": "Use keyboard shortcuts to control PocketCasts Web Player",
+    "author": "Craig Gavagan",
+
+    "permissions": [
+        "https://playbeta.pocketcasts.com/web*",
+        "contextMenus",
+        "tabs"
+    ],
+
+    "icons": {
+        "128": "podcast.png"
+    },
+
+    "applications": {
+        "gecko": {
+            "id": "craig@craiggavagan.com"
+        }
+    },
+
+    "background": {
+        "scripts": [ "background.js" ]
+    },
+
+    "commands": {
+        "toggle-playback": {
+            "suggested_key": { "default": "Alt+Shift+O" },
+            "description": "Toggle Playback"
+        },
+        "skip-episode-backward": {
+            "suggested_key": { "default": "Alt+Shift+I" },
+            "description": "Rewind Episode"
+        },
+        "skip-episode-forward": {
+            "suggested_key": { "default": "Alt+Shift+P" },
+            "description": "Fast-forward episode"
+        }
+    },
+
+    "browser_action": {
+        "browser_style": true,
+        "default_icon": {
+            "128": "podcast.png"
+        }
+    }
+}
