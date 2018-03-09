@@ -24,31 +24,25 @@ function scriptFor(command) {
 }
 
 function scriptThatClicksOn(button_name) {
-    let script = function() {
-        let button = document.getElementsByClassName('button-name');
-
-        if (button.length > 0) {
-            button[0].click();
-            return;
-        }
+    const script = () => {
+        const button = document.getElementsByClassName('button-name');
+        if (button.length > 0) return button[0].click();
     };
 
-    return '(' + script.toString().replace('button-name', button_name) + ')()';
+    return `(${script.toString().replace('button-name', button_name)})()`;
 }
 
 async function executePocketCastsCommand(command) {
-    const pcTabs = await browser.tabs.query({ url: pocketCastsUrl });
+    const [pcTab] = await browser.tabs.query({ url: pocketCastsUrl });
 
-    if (pcTabs.length == 0) {
-        openPocketCasts();
-        return;
+    if (typeof pcTab === 'undefined' || pcTab === null) {
+        return openPocketCasts();
     }
-    for (let tab of pcTabs) {
-        browser.tabs.executeScript(tab.id, {
-            runAt: 'document_start',
-            code: scriptFor(command),
-        });
-    }
+
+    browser.tabs.executeScript(pcTab.id, {
+        runAt: 'document_start',
+        code: scriptFor(command),
+    });
 }
 
 // Listen for keyboard shortcuts
