@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "PocketCasts Hotkeys",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Use keyboard shortcuts to control PocketCasts Web Player",
     "author": "Craig Gavagan",
 
@@ -30,15 +30,11 @@
         },
         "skip-episode-forward": {
             "suggested_key": { "default": "Alt+Shift+P" },
-            "description": "fast-forward episode"
+            "description": "Fast-forward episode"
         },
-        "decrease-playback-speed": {
-            "suggested_key": { "default": "Alt+Shift+K" },
-            "description": "Decrease playback speed"
-        },
-        "increase-playback-speed": {
+        "change-playback-speed": {
             "suggested_key": { "default": "Alt+Shift+L" },
-            "description": "Increase playback speed"
+            "description": "Change playback speed"
         }
     },
 

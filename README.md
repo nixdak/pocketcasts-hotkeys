@@ -13,8 +13,7 @@ I love the [Google Music Hotkeys](https://github.com/lidel/google-music-hotkeys)
   - Toggle playback: <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>O</kbd>
   - Skip episode backwards: <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>
   - Skip episode forwards: <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>
-  - Slow playback: <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd>
-  - Speed up playback: <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>L</kbd>
+  - Alter playback speed: <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>L</kbd>
 - Menu bar item:
   - A regular click will either:
     - Toggle playback of an episode if PocketCasts is open
