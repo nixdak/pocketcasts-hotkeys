@@ -30,7 +30,15 @@
         },
         "skip-episode-forward": {
             "suggested_key": { "default": "Alt+Shift+P" },
-            "description": "Fast-forward episode"
+            "description": "fast-forward episode"
+        },
+        "decrease-playback-speed": {
+            "suggested_key": { "default": "Alt+Shift+K" },
+            "description": "Decrease playback speed"
+        },
+        "increase-playback-speed": {
+            "suggested_key": { "default": "Alt+Shift+L" },
+            "description": "Increase playback speed"
         }
     },
 
