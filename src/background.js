@@ -1,4 +1,4 @@
-'use strict';
+import * as browser from 'webextension-polyfill';
 
 const pocketCastsUrl = 'https://playbeta.pocketcasts.com/*';
 const togglePlaybackCommand = 'toggle-playback';
