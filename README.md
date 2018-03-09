@@ -1,9 +1,9 @@
 # PocketCasts Hotkeys
-Browser extension that adds keyboard control to the [PocketCasts][https://pocketcasts.com] webplayer
+Browser extension that adds keyboard control to the [PocketCasts](https://pocketcasts.com) webplayer
 
 ## Background
 
-I love the [Google Music Hotkeys][https://github.com/lidel/google-music-hotkeys] extension. I wanted something similar for PocketCasts, so I did what any good software developer would, and copypasted from the internet till it worked.
+I love the [Google Music Hotkeys](https://github.com/lidel/google-music-hotkeys) extension. I wanted something similar for PocketCasts, so I did what any good software developer would, and copypasted from the internet till it worked.
 
 ## Features
 
