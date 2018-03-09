@@ -82,8 +82,8 @@ browser.contextMenus.create({
 });
 
 browser.contextMenus.create({
-    id: 'decrease-playback-speed',
-    title: 'Decrease playback speed',
+    id: 'change-playback-speed',
+    title: 'Change playback speed',
     contexts: ['browser_action'],
     onclick: () => executePocketCastsCommand(changePlaybackSpeedCommand)
 });
