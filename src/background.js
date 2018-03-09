@@ -13,6 +13,14 @@ async function openPocketCasts() {
 }
 
 function scriptFor(command) {
+    const scriptThatClicksOn = button_name => () => {
+        const button = document.getElementsByClassName(button_name);
+
+        if (button.length > 0) {
+            button[0].click();
+        }
+    };
+
     switch (command) {
         case togglePlaybackCommand:
             return scriptThatClicksOn('play_pause_button');
@@ -23,32 +31,17 @@ function scriptFor(command) {
     }
 }
 
-function scriptThatClicksOn(button_name) {
-    let script = function() {
-        let button = document.getElementsByClassName('button-name');
-
-        if (button.length > 0) {
-            button[0].click();
-            return;
-        }
-    };
-
-    return '(' + script.toString().replace('button-name', button_name) + ')()';
-}
-
 async function executePocketCastsCommand(command) {
     const pcTabs = await browser.tabs.query({ url: pocketCastsUrl });
 
-    if (pcTabs.length == 0) {
-        openPocketCasts();
-        return;
-    }
-    for (let tab of pcTabs) {
+    if (pcTabs.length === 0) return openPocketCasts();
+
+    pcTabs.forEach(tab => {
         browser.tabs.executeScript(tab.id, {
             runAt: 'document_start',
             code: scriptFor(command),
         });
-    }
+    });
 }
 
 // Listen for keyboard shortcuts
