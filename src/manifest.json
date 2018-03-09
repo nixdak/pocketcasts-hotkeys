@@ -15,12 +15,6 @@
         "128": "podcast.png"
     },
 
-    "applications": {
-        "gecko": {
-            "id": "craig@craiggavagan.com"
-        }
-    },
-
     "background": {
         "scripts": [ "background.js" ]
     },
