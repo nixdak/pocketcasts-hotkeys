@@ -27,8 +27,24 @@ I love the [Google Music Hotkeys](https://github.com/lidel/google-music-hotkeys)
 
 I'll be releasing this extension on the Firefox store soon but for now, the extension needs to be sideloaded
 
+### Build
+
+To build run
+
+```shell
+yarn
+yarn build
+```
+
 ### Firefox
 
-1. about:debugging
-2. Click Load Temporary Add-On
-3. Navigate to the src directory and load manifest.json
+1. [about:debugging](about:debugging)
+2. Click `Load Temporary Add-On`
+3. Navigate to the `dist` directory and load `manifest.json`
+
+### Chrome
+
+1. [chrome://extensions](chrome://extensions)
+2. Click `Developer mode`
+3. Click `Load unpacked extensions`
+4. Navigate to the `dist` directory and load `manifest.json`
