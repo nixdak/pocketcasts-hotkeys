@@ -22,26 +22,32 @@ I love the [Google Music Hotkeys](https://github.com/lidel/google-music-hotkeys)
 
 ## Installation
 
-I'll be releasing this extension on the Firefox and Chrome stores soon but for now, the extension needs to be sideloaded
+### Firefox
 
-### Build
+[![Get the add-on](https://blog.mozilla.org/addons/files/2015/11/AMO-button_1.png)](https://addons.mozilla.org/en-US/firefox/addon/pocketcasts-hotkeys/)
 
-To build run
+### Chrome
+
+[![](https://developer.chrome.com/webstore/images/ChromeWebStore_BadgeWBorder_v2_206x58.png)](https://chrome.google.com/webstore/detail/pocketcasts-hotkeys/gjodllhlkmhekjodidkemjmjjojaadac)
+
+### Manual
+
+To build, in the root of the repository run
 
 ```shell
 yarn
 yarn build
 ```
 
-### Firefox
+#### Firefox
 
 1. [about:debugging](about:debugging)
 2. Click `Load Temporary Add-On`
 3. Navigate to the `dist` directory and load `manifest.json`
 
-### Chrome
+#### Chrome
 
 1. [chrome://extensions](chrome://extensions)
 2. Click `Developer mode`
 3. Click `Load unpacked extensions`
-4. Navigate to the `dist` directory and load `manifest.json`
+4. Navigate to the `dist` directory and load that directory
